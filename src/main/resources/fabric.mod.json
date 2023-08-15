@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "betafruits",
+  "version": "${version}",
+  "name": "betafruits",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/squidward/betafruits"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/betafruits/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.smokepcpeveryday.betafruits.client.BetafruitsClient"
+    ],
+    "main": [
+      "net.smokepcpeveryday.betafruits.Betafruits"
+    ]
+  },
+  "mixins": [
+    "betafruits.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
