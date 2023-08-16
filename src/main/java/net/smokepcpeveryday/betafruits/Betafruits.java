@@ -1,6 +1,7 @@
 package net.smokepcpeveryday.betafruits;
 
 import net.fabricmc.api.ModInitializer;
+import net.smokepcpeveryday.betafruits.block.ModBlocks;
 import net.smokepcpeveryday.betafruits.item.ModItemGroups;
 import net.smokepcpeveryday.betafruits.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class Betafruits implements ModInitializer {
     public void onInitialize() {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
     }
 }

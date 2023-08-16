@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "betafruits:block/pie/pear_pie_side",
+      "bottom": "betafruits:block/pie/pear_pie_bottom",
+      "top": "betafruits:block/pie/pear_pie_top",
+      "side": "betafruits:block/pie/pear_pie_side",
+      "inside": "betafruits:block/pie/pear_pie_inner"
+    }
+  },
+  "variants": {
+    "bites=0": { "model": "betafruits:block/pear_pie/cake_uneaten" },
+    "bites=1": { "model": "betafruits:block/pear_pie/cake_slice1" },
+    "bites=2": { "model": "betafruits:block/pear_pie/cake_slice2" },
+    "bites=3": { "model": "betafruits:block/pear_pie/cake_slice3" },
+    "bites=4": { "model": "betafruits:block/pear_pie/cake_slice4" },
+    "bites=5": { "model": "betafruits:block/pear_pie/cake_slice5" },
+    "bites=6": { "model": "betafruits:block/pear_pie/cake_slice6" }
+  }
+}

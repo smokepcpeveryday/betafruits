@@ -5,14 +5,14 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.smokepcpeveryday.betafruits.Betafruits;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.smokepcpeveryday.betafruits.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup FRUIT_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup FRUITS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Betafruits.MOD_ID, "fruits"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betafruits"))
                     .icon(() -> new ItemStack(ModItems.PINECONE)).entries((displayContext, entries) -> {
@@ -36,6 +36,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CHERRIES);
                         entries.add(ModItems.BLACKBERRY);
 
+                        //PASTRIES
+                        entries.add(ModBlocks.PEAR_PIE);
 
                         //MISC
                         entries.add(ModItems.PINECONE);
