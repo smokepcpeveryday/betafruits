@@ -1,10 +1,10 @@
 package net.smokepcpeveryday.betafruits.item;
 import net.minecraft.item.FoodComponent;
 public class ModFoodComponents {
-    //Jellies
+    //JELLY
     public static final FoodComponent PINECONE_JELLY = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
 
-    //Fruits
+    //FRUITS
     public static final FoodComponent PEAR = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
     public static final FoodComponent MANGO = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
     public static final FoodComponent STARFRUIT = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
@@ -22,4 +22,15 @@ public class ModFoodComponents {
     public static final FoodComponent BANANA = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
     public static final FoodComponent CHERRIES = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
     public static final FoodComponent BLACKBERRY = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+
+    //PIES
+    public static final FoodComponent PEAR_PIE = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+    public static final FoodComponent MANGO_PIE = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+    public static final FoodComponent BLUEBERRY_PIE = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+    public static final FoodComponent APPLE_PIE = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+
+    //OTHER RANDOM SHIT
+    public static final FoodComponent PEACH_COBBLER = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+    public static final FoodComponent BANANA_BREAD = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
+
 }

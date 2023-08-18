@@ -19,5 +19,6 @@ public class Betafruits implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
     }
 }

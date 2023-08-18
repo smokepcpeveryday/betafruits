@@ -17,5 +17,10 @@
   "item.betafruits.blueberries": "Blueberries",
   "item.betafruits.banana": "Banana",
   "item.betafruits.cherries": "Cherries",
-  "item.betafruits.blackberry": "Blackberry"
+  "item.betafruits.blackberry": "Blackberry",
+
+  "item.betafruits.pear_pie": "Pear Pie",
+  "item.betafruits.mango_pie": "Mango Pie",
+  "item.betafruits.blueberry_pie": "Blueberry Pie",
+  "item.betafruits.apple_pie": "Apple Pie"
 }

@@ -36,12 +36,20 @@ public class ModItemGroups {
                         entries.add(ModItems.CHERRIES);
                         entries.add(ModItems.BLACKBERRY);
 
-                        //PASTRIES
-                        entries.add(ModBlocks.PEAR_PIE);
+                        //PIES
+                        entries.add(ModItems.PEAR_PIE);
+                        entries.add(ModItems.MANGO_PIE);
+                        entries.add(ModItems.BLUEBERRY_PIE);
+                        entries.add(ModItems.APPLE_PIE);
 
                         //MISC
                         entries.add(ModItems.PINECONE);
                         entries.add(ModItems.PINECONE_JELLY);
+                        entries.add(ModItems.PEACH_COBBLER);
+                        entries.add(ModItems.BANANA_BREAD);
+
+                        //SEEDS
+                        entries.add(ModItems.STRAWBERRY_SEEDS);
                     }).build());
 
 

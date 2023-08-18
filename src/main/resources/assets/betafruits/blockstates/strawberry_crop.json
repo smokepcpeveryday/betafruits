@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "betafruits:block/strawberry_crop_stage0"
+    },
+    "age=1": {
+      "model": "betafruits:block/strawberry_crop_stage0"
+    },
+    "age=2": {
+      "model": "betafruits:block/strawberry_crop_stage1"
+    },
+    "age=3": {
+      "model": "betafruits:block/strawberry_crop_stage1"
+    },
+    "age=4": {
+      "model": "betafruits:block/strawberry_crop_stage2"
+    },
+    "age=5": {
+      "model": "betafruits:block/strawberry_crop_stage2"
+    },
+    "age=6": {
+      "model": "betafruits:block/strawberry_crop_stage2"
+    },
+    "age=7": {
+      "model": "betafruits:block/strawberry_crop_stage3"
+    }
+  }
+}
