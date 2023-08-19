@@ -49,6 +49,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BANANA_BREAD);
 
                         //SEEDS
+                        entries.add(ModItems.PINEAPPLE_SEEDS);
                         entries.add(ModItems.STRAWBERRY_SEEDS);
                     }).build());
 

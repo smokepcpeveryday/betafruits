@@ -3,18 +3,15 @@ package net.smokepcpeveryday.betafruits.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BlockItem;
+import net.minecraft.item.FoodComponent;
 import net.smokepcpeveryday.betafruits.Betafruits;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.smokepcpeveryday.betafruits.block.BetafruitsCropBlock;
+import net.smokepcpeveryday.betafruits.block.BlueberryBush;
 import net.smokepcpeveryday.betafruits.block.ModBlocks;
 
 public class ModItems {
@@ -38,12 +35,13 @@ public class ModItems {
     public static final Item PEACH = registerItem("peach", new Item(new FabricItemSettings().food(ModFoodComponents.PEACH)));
     public static final Item PLUM = registerItem("plum", new Item(new FabricItemSettings().food(ModFoodComponents.PLUM)));
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new FabricItemSettings().food(ModFoodComponents.STRAWBERRY)));
-    public static final Item BLUEBERRIES = registerItem("blueberries", new Item(new FabricItemSettings().food(ModFoodComponents.BLUEBERRIES)));
+    public static final Item BLUEBERRIES = registerItem("blueberries", new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new FabricItemSettings().maxCount(64).food(ModFoodComponents.BLUEBERRIES)));
     public static final Item BANANA = registerItem("banana", new Item(new FabricItemSettings().food(ModFoodComponents.BANANA)));
     public static final Item CHERRIES = registerItem("cherries", new Item(new FabricItemSettings().food(ModFoodComponents.CHERRIES)));
-    public static final Item BLACKBERRY = registerItem("blackberry", new Item(new FabricItemSettings().food(ModFoodComponents.BLACKBERRY)));
+    public static final Item BLACKBERRY = registerItem("blackberry", new AliasedBlockItem(ModBlocks.BLACKBERRY_BUSH, new FabricItemSettings().maxCount(64).food(ModFoodComponents.BLACKBERRY)));
 
     //SEEDS
+    public static final Item PINEAPPLE_SEEDS = registerItem("pineapple_seeds", new SeedItem(ModBlocks.PINEAPPLE_CROP, new Item.Settings()));
     public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds", new SeedItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
 
     //PIES
@@ -56,9 +54,6 @@ public class ModItems {
     public static final Item PEACH_COBBLER = registerItem("peach_cobbler", new Item(new FabricItemSettings().food(ModFoodComponents.PEACH_COBBLER)));
     public static final Item BANANA_BREAD = registerItem("banana_bread", new Item(new FabricItemSettings().food(ModFoodComponents.BANANA_BREAD)));
 
-    private static Item.Settings settings() {
-        return new Item.Settings();
-    }
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(PINECONE);

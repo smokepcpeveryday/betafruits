@@ -8,11 +8,19 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.smokepcpeveryday.betafruits.Betafruits;
 
 public class ModBlocks {
+
+    //CROPS
+    public static final Block PINEAPPLE_CROP = registerBlockWithoutItem("pineapple_crop", new BetafruitsCropBlock());
     public static final Block STRAWBERRY_CROP = registerBlockWithoutItem("strawberry_crop", new BetafruitsCropBlock());
+
+    //BUSHES
+    public static final BlueberryBush BLUEBERRY_BUSH = (BlueberryBush) registerBlockWithoutItem("blueberry_bush",new BlueberryBush(FabricBlockSettings.create().resistance(0).nonOpaque().luminance(5).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
+    public static final BlackberryBush BLACKBERRY_BUSH = (BlackberryBush) registerBlockWithoutItem("blackberry_bush",new BlackberryBush(FabricBlockSettings.create().resistance(0).nonOpaque().luminance(5).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Betafruits.MOD_ID, name), block);
