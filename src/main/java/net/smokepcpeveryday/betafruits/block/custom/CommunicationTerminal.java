@@ -17,9 +17,9 @@ import java.util.Objects;
 public class CommunicationTerminal extends HorizontalFacingBlock {
     public CommunicationTerminal(Settings settings) {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(Properties, Direction.NORTH));
+        this.setDefaultState(this.stateManager.getDefaultState().with(NORTH, Direction.NORTH));
     }
-
+    //test
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
