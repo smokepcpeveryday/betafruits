@@ -1,4 +1,4 @@
-package net.smokepcpeveryday.betafruits.block;
+package net.smokepcpeveryday.betafruits.block.custom;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;

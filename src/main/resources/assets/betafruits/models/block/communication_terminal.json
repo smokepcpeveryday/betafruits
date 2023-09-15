@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/iron_block",
+    "east": "betafruits:block/communication_terminal_right",
+    "north": "betafruits:block/communication_terminal_front",
+    "particle": "betafruits:block/communication_terminal_front",
+    "south": "betafruits:block/communication_terminal_back",
+    "up": "betafruits:block/communication_terminal_top",
+    "west": "betafruits:block/communication_terminal_left"
+  }
+}

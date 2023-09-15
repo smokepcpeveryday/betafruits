@@ -11,6 +11,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.smokepcpeveryday.betafruits.Betafruits;
+import net.smokepcpeveryday.betafruits.block.custom.BetafruitsCropBlock;
+import net.smokepcpeveryday.betafruits.block.custom.BlackberryBush;
+import net.smokepcpeveryday.betafruits.block.custom.BlueberryBush;
+import net.smokepcpeveryday.betafruits.block.custom.CommunicationTerminal;
 
 public class ModBlocks {
 
@@ -21,6 +25,11 @@ public class ModBlocks {
     //BUSHES
     public static final BlueberryBush BLUEBERRY_BUSH = (BlueberryBush) registerBlockWithoutItem("blueberry_bush",new BlueberryBush(FabricBlockSettings.create().resistance(0).nonOpaque().luminance(5).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
     public static final BlackberryBush BLACKBERRY_BUSH = (BlackberryBush) registerBlockWithoutItem("blackberry_bush",new BlackberryBush(FabricBlockSettings.create().resistance(0).nonOpaque().luminance(5).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
+
+
+    //GEARTHCORP
+    public static final Block COMMUNICATION_TERMINAL = registerBlock("communication_terminal", new CommunicationTerminal(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Betafruits.MOD_ID, name), block);

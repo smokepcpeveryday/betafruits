@@ -53,6 +53,18 @@ public class ModItemGroups {
                         entries.add(ModItems.STRAWBERRY_SEEDS);
                     }).build());
 
+    public static final ItemGroup GEARTH = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Betafruits.MOD_ID, "gearth"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betafruits"))
+                    .icon(() -> new ItemStack(ModItems.PINECONE)).entries((displayContext, entries) -> {
+
+                                //FRUITS
+                                entries.add(ModItems.MINER);
+
+                            }).build());
+
+
+
 
 
 

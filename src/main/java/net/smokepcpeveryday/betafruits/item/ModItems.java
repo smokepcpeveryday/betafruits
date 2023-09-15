@@ -3,20 +3,18 @@ package net.smokepcpeveryday.betafruits.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponent;
+import net.minecraft.item.*;
 import net.smokepcpeveryday.betafruits.Betafruits;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.smokepcpeveryday.betafruits.block.BlueberryBush;
 import net.smokepcpeveryday.betafruits.block.ModBlocks;
 
 public class ModItems {
 
+    //THIS SECTION IS FOR ALL THE FRUIT STUFF
 
+    //PINECONE
     public static final Item PINECONE = registerItem("pinecone", new Item(new FabricItemSettings()));
     public static final Item PINECONE_JELLY = registerItem("pinecone_jelly", new Item(new FabricItemSettings().food(ModFoodComponents.PINECONE_JELLY)));
 
@@ -54,6 +52,19 @@ public class ModItems {
     public static final Item PEACH_COBBLER = registerItem("peach_cobbler", new Item(new FabricItemSettings().food(ModFoodComponents.PEACH_COBBLER)));
     public static final Item BANANA_BREAD = registerItem("banana_bread", new Item(new FabricItemSettings().food(ModFoodComponents.BANANA_BREAD)));
 
+
+
+
+
+    //THIS SECTION IS FOR THE GEARTHY GOODNESS LIKE ABOSS
+
+    //GEARTHCORP ITEMS
+    public static final Item MINER = registerItem("miner",
+            new PickaxeItem(ToolMaterials.STONE, 2, 2f, new FabricItemSettings()));
+
+    //MARIDIUM
+    public static final Item MARIDIUM = registerItem("maridium", new Item(new FabricItemSettings()));
+    public static final Item RAW_MARIDIUM = registerItem("raw_maridium", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(PINECONE);
