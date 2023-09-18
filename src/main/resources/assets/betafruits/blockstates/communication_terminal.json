@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "betafruits:block/communication_terminal", "uvlock": true },
+    "facing=east":  { "model": "betafruits:block/communication_terminal", "y":  90, "uvlock": true },
+    "facing=south": { "model": "betafruits:block/communication_terminal", "y": 180, "uvlock": true },
+    "facing=west":  { "model": "betafruits:block/communication_terminal", "y": 270, "uvlock": true }
+  }
+}
