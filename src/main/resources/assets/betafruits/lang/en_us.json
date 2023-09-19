@@ -22,5 +22,8 @@
   "item.betafruits.pear_pie": "Pear Pie",
   "item.betafruits.mango_pie": "Mango Pie",
   "item.betafruits.blueberry_pie": "Blueberry Pie",
-  "item.betafruits.apple_pie": "Apple Pie"
+  "item.betafruits.apple_pie": "Apple Pie",
+
+  "block.betafruits.communication_terminal": "GearthCorp™ Communication Terminal",
+  "item.betafruits.miner": "GearthCorp™ Miner"
 }

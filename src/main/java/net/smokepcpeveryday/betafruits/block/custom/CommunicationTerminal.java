@@ -30,11 +30,11 @@ public class CommunicationTerminal extends HorizontalFacingBlock {
 
     @Override
     public void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
-        stateManager.add(Properties.FACING);
+        stateManager.add(FACING);
     }
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
+        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
 
